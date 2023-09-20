@@ -4,7 +4,7 @@ import LogoLinkedin from '../../assets/logoLink.png'
 import LogoGitHub from '../../assets/logoGitHub.png'
 import LogoCV from '../../assets/logocv.png'
 import LogoYT from '../../assets/logoYT.png'
-import emailjs from '@emailjs/browser';
+import emailjs from 'emailjs-com';
 
 
 const Contact = () => {
