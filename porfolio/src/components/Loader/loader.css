@@ -1,0 +1,26 @@
+/* Loader.css */
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Esto asegura que ocupe toda la altura de la pantalla */
+}
+
+.rotating-logo {
+  width: 125px; /* Ajusta el tamaño de tu logo al 125% */
+  height: 125px; /* Ajusta el tamaño de tu logo al 125% */
+  animation: spin 2s linear infinite; /* Define la animación de giro */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-text {
+  color: #373232;
+  margin-top: 10px; /* Espacio entre el icono y el texto */
+  font-size: 23px; /* Ajusta el tamaño del texto al 125% */
+  text-align: center;
+}

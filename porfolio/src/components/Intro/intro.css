@@ -1,66 +1,110 @@
 #intro{
-    height: calc(100vh - 4rem);
-    width: 100vw;
-    max-width: 75rem;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
+  height: calc(100vh - 4rem);
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 10px 10px 1000rem yellow; /* Añade el sombreado alrededor de la imagen */
+  border-radius: 0 0 15px 15px;
+  text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.5); /* Ajusta los valores según tu preferencia */
+
+
+}
+
+@media screen and (max-width:720px) {
+#intro{
+width: 100%;  }
 }
 
 
-.bg{
-    position: absolute;
-    top: 0;
-   right: 0;
-    z-index: -1;
-    object-fit: cover;
-    height: 100%;
+
+
+
+
+
+.jump-text {
+  animation: jump 1s infinite alternate;
 }
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px); /* Ajusta la distancia de salto según tu preferencia */
+  }
+}
+.bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 2px 2px 2px rgba(9, 197, 44, 0.5); /* Ajusta los valores según tu preferencia */
+ 
+}
+
 
 .introContent{
-    height: 100vh;
-    width: 100vw;
-    padding: 2rem;
-    font-size: 3rem;
-    font-weight: 700;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  padding: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+
 
 
 .hello{
-    font-size: 1.75rem;
-    font-weight: 100;
+  font-size: 1.75rem;
+  font-weight: 100;
 }
 
 .introName{
-    color: yellow;
+  color: yellow;
 }
 
-.introPara{
-    font-size: medium;
-    font-weight: 300;
-    letter-spacing:1px ;
+.introPara {
+  font-size: medium;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Ajusta los valores según tu preferencia */
 }
+
 
 .btn{
-    background: white;
-    margin: 1rem 0;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 2rem;
+  background: white;
+  margin: 1rem 0;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
 }
 
-.btnImg{
-    object-fit: cover;
-    margin: 0 0.25rem;
-    height: 1rem;
-}
+
 
 
 @media screen and (max-width:480px) {
-    .bg{
-        right: -20vw;
-    }
+  .bg{
+      right: -20vw;
+  }
 }
+
+
+@media screen and (min-width:1200px) {
+  .introContent{
+    
+  font-size: 3.85rem; 
+ }.hello{
+  font-size: 2.05rem;
+ }.introPara {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Ajusta los valores según tu preferencia */
+}
+  }

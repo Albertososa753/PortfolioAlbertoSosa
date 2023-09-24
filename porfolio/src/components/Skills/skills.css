@@ -8,22 +8,64 @@
     justify-content: center;
     text-align: center;
     margin: 0 auto;
+    margin-top: 15%;
 }
 
-.skillTitle{
-font-size: 3rem;
-font-weight: 600 ;
-padding-top: 3rem ;
-margin-bottom: 1.5rem;
+@media screen and (min-width:1200px) {
+    #skills{
+        margin-top: 14%;
+        transform: scale(1.25); /* Aumenta todos los elementos al 125% */
+    }
 }
 
+
+
+.skillTitle {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid transparent; /* Línea del cursor invisible */
+    animation: typingAnimation 5s steps(100) infinite;
+  
+    /* Agrega el cursor */
+    &:after {
+      content: "|";
+      display: inline-block;
+      vertical-align: middle;
+      animation: cursorBlink 10s infinite;
+    }
+  }
+  
+  @keyframes typingAnimation {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  @keyframes cursorBlink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  
+  
+  
 .skillDesc{
     font-weight: 400;
-    font-size: 1rem;
+    font-size:15px;
     max-width: 51rem;
     padding: 0 2rem;
+    text-align: justify;
 }
-
 
 .skillBars{
     margin: 1.5rem;
@@ -36,6 +78,7 @@ margin-bottom: 1.5rem;
 
 .skillBar{
     display: flex;
+    justify-content: center;
     margin:1rem ;
     padding: 1.5rem 2rem;
     border-radius: 0.5rem;
@@ -47,12 +90,29 @@ margin-bottom: 1.5rem;
     object-fit: cover;
     height: 3rem;
     width: 3rem;
-    margin-right: 2rem;
+    margin: 1.5rem;
+    transition: transform 0.3s ease; /* Agregar transición suave */
+
 }
 
-.skillBarText>p{
+.skillBarImg:hover {
+    transform: rotate(360deg) scale(1.5); 
+}
+@media screen and (max-width:720px){
+    .skillBarImg{
+        margin: 0.5rem;
+    }
+}
+
+.skillBarText{
+text-align: center;
 font-size: 0.9rem;
 font-weight: 200;
+
+}
+.skillText{
+    margin-bottom: 15px;
+    
 }
 
 
@@ -67,4 +127,66 @@ font-weight: 200;
     .skillBarText>h2{
         font-size: 5vw;
     }
+   
 }
+
+
+@media screen and (max-width: 580px) {
+    .skillDesc {
+        text-align: center;
+        
+    }
+}
+
+.skillsBarImg{
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 2rem;
+    border-radius: 5px;
+    animation: moveErratic 8s linear infinite; 
+
+}
+
+.skillsBarText{
+font-size: 0.9rem;
+font-weight: 200;
+}
+.skillsBar{
+    display: flex;
+    margin:1rem ;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: rgb(50, 50, 50);
+}
+@media screen and (max-width:400px) {
+    .skillsBarText{
+        font-size: 0.65rem;
+    }
+}
+.skillsBars{
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+    text-align: left;
+
+}
+
+@keyframes moveErratic {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    25% {
+        transform: translateX(10px) translateY(-10px);
+    }
+    50% {
+        transform: translateX(-15px) translateY(15px);
+    }
+    75% {
+        transform: translateX(10px) translateY(-10px);
+    }
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+

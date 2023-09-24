@@ -1,20 +1,27 @@
-import React from 'react'
-import './intro.css'
-import { Link } from "react-scroll";
-import btnImg from '../../assets/hireme.png'
-import bg from '../../assets/_com.apple.Pasteboard.OrebzH.png'
+import React from "react";
+import "./intro.css";
+
+import bg from "../../assets/_com.apple.Pasteboard.OrebzH.png";
 
 const Intro = () => {
   return (
-<section id='intro'>
-  <div className='introContent'>
-<span className='hello'>Hola,</span>
-<span className="introText">Soy <span className="introName">Alberto Sosa</span><br />Desarrollador FullStack</span>
-<p className="introPara">Este es mi sitio web en el cual te mostrae los proyectos que he <br />echo  a lo largo de mi carrera</p>
-<Link><button className="btn"><img src={btnImg} alt="" className='btnImg' />Contratame</button></Link>
-  </div>
-  <img src={bg} alt="Profile" className='bg' />
-</section>  )
-}
+    <section id="intro">
+      <div className="introContent">
+        <span className="hello">Hola,</span>
+        <span className="jump-text">
+          Soy <span className="introName">Alberto Sosa.</span>
+          <br />
+          Desarrollador FullStack
+        </span>
+        <p className="introPara">
+          Este es mi sitio web!, donde comparto una colección de los proyectos
+          que <br /> he creado a lo largo de mi trayectoria como desarrollador
+          web.
+        </p>
+      </div>
+      <img src={bg} alt="Profile" className="bg" />
+    </section>
+  );
+};
 
-export default Intro
+export default Intro;

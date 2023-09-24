@@ -1,0 +1,104 @@
+/* ModalCarousel.css */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+.modal-carousel {
+  position: fixed;
+  z-index: 10000;
+  background-color: white;
+  width: 80% !important;
+  height: 50rem;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  height: 40px;
+  width: 90px;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  background: red;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.close-button:hover {
+  transform: scale(1.1);
+}
+
+.text {
+  color: rgb(0, 0, 0);
+  text-align: justify;
+  word-wrap: break-word;
+}
+
+.image-preview {
+  cursor: pointer;
+}
+
+.carousel-container {
+  position: fixed;
+  z-index: 10000;
+  background: black;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+  padding: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel .control-arrow {
+  font-size: 32px; 
+  padding: 10px; 
+  border-radius: 15px;
+}
+
+.carousel .control-arrow:hover {
+  cursor: pointer;
+}
+
+/* Para pantallas pequeñas*/
+
+@media (max-width: 768px) {
+  .modal-carousel {
+    width: 99%;
+    height: 80%;
+  }
+  .carousel .slide img {
+    width: 100% !important;
+    height: 20rem !important;
+  }
+  .close-button {
+    z-index: 10000;
+    top: 5px;
+    right: 5px;
+    height: 25px;
+    width: 25px;
+  }
+
+  .image-preview {
+    height: 30vh !important ;
+    width: 100% !important;
+    padding: 0;
+  }
+}

@@ -7,7 +7,7 @@ import manu from '../../assets/menu.png'
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false)
   return (
-    <nav className="navbar">
+    <nav className="navbar ">
       <img src={logo} alt="logo" className="logo" />
       <div className="desktopMenu">
         <Link activeClass="active" to='intro' spy={true} smooth={true} offset={-100} duration={500} className="desktopMenuListItem">Inicio</Link>

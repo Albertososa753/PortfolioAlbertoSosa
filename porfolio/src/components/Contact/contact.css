@@ -1,4 +1,5 @@
 #contact{
+
   min-height: calc(100vh - 40rem);
   width: 100vw;
   max-width: 60rem;
@@ -8,8 +9,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
+  margin-top: 10%;
 
+
+}
+@media screen and (min-width:1200px) {
+  #contact{
+    margin-bottom: 5%;
+  transform: scale(1.25); /* Aumenta todos los elementos al 125% */
+  }
+}
 
 .contactDesc{
     padding: 1rem;
@@ -62,7 +71,47 @@
 
 .link{
     object-fit: cover;
-    height: 3rem;
-    width: 3rem;
+    height: 2rem;
+    width: 2rem;
     margin: 0 0.75rem;
+}
+
+
+
+.icon-svg {
+    fill: rgb(40, 40, 40); /* Color predeterminado (gris) */
+    transition: fill 0.2s; /* Transición suave para el cambio de color */
+  }
+  
+  /* Estilo cuando el icono está en hover */
+  .icon-svg:hover {
+    fill: yellow; /* Cambia el color a amarillo al hacer hover */
+  }
+
+
+  /* Estilo para el botón de flecha */
+.arrow-button {
+  position: fixed;
+  bottom: 20px; /* Ajusta la posición vertical según tu preferencia */
+  left: 70rem; /* Ajusta la posición horizontal según tu preferencia */
+  background-color: #007bff; /* Color de fondo del botón */
+  color: white; /* Color del icono */
+  width: 40px; /* Ancho del botón */
+  height: 40px; /* Altura del botón */
+  border-radius: 50%; /* Forma circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+/* Estilo para el icono de flecha (FontAwesome) */
+.arrow-button i {
+  font-size: 20px; /* Tamaño del icono */
+}
+
+/* Cambia el color del botón al pasar el mouse por encima */
+.arrow-button:hover {
+  background-color: #0056b3;
 }
