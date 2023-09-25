@@ -3,10 +3,7 @@ import "./contact.css";
 import LogoCV from "../../assets/svg/cv.svg";
 import YT from "../../assets/svg/yt.svg";
 import LogoLinkedin from "../../assets/svg/l.svg";
-
 import LogoGitHub from "../../assets/svg/g.svg";
-
-import LogoYT from "../../assets/logoYT.png";
 import emailjs from "emailjs-com";
 
 const Contact = () => {
@@ -33,8 +30,14 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact">
-      <h1 className="contactTitle">CONTACTATE</h1>
+    <div id="contact" style={{ marginTop: "300px" }}>
+      <h1 className="contactTitle">CONTACTO</h1>
+      <h2
+        className="contactTitle"
+        style={{ fontSize: "15px", textAlign: "center" }}
+      >
+        ¡Si queres colaborar conmigo no dudes en contactarte!
+      </h2>
       <form ref={form} onSubmit={sendEmail} className="contactFrom">
         <input
           type="text"
@@ -71,7 +74,7 @@ const Contact = () => {
             <img src={LogoGitHub} alt="GitHub" className="link" />
           </a>
 
-          <a href="./AlbertoSosaCV.pdf" download>
+          <a id="cv" href="./AlbertoSosaCV.pdf" download>
             <img src={LogoCV} alt="CV" className="link" />
           </a>
           <a
@@ -82,7 +85,6 @@ const Contact = () => {
           </a>
         </div>
       </form>
-      
     </div>
   );
 };

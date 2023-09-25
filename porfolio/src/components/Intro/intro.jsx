@@ -1,7 +1,7 @@
 import React from "react";
 import "./intro.css";
 
-import bg from "../../assets/_com.apple.Pasteboard.OrebzH.png";
+import bg from "../../assets/Logos/_com.apple.Pasteboard.OrebzH.png";
 
 const Intro = () => {
   return (
@@ -14,7 +14,7 @@ const Intro = () => {
           Desarrollador FullStack
         </span>
         <p className="introPara">
-          Este es mi sitio web!, donde comparto una colección de los proyectos
+          Este es mi sitio web! donde comparto una colección de los proyectos
           que <br /> he creado a lo largo de mi trayectoria como desarrollador
           web.
         </p>

@@ -2,44 +2,59 @@
   margin: 0 auto;
   height: 45rem;
   margin-top: 20rem;
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0px 0px 50px yellow; 
-  border-radius: 10%;
+  box-shadow: 5px 0px 5px yellow;
+  background: rgb(40, 40, 40);
 }
 
 .slider {
-  display: inline-flex; 
+  display: inline-flex;
 }
 .title {
   font-size: 3rem;
   font-weight: 600;
   text-align: center;
-  animation: pulseAnimation 5s infinite alternate;
+  animation: pulseAnimation 1s infinite alternate;
   margin-bottom: 3rem;
-  text-shadow: 5px 3px 5px rgba(255, 255, 255, 0.5); 
+  text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
 }
 
 @keyframes pulseAnimation {
   0% {
-    transform: scale(0);
+    transform: scale(1);
   }
   100% {
-    transform: scale(1); 
+    transform: scale(1.01);
   }
 }
 
 .item {
-  width: 50rem; 
+  width: 50rem;
   height: 30rem;
-  box-shadow: 0px 0px 50px yellow;
+  border: 1px solid rgb(32, 27, 27);
   border-radius: 10px;
-  margin-right: 5.1rem; 
+  margin-right: 5.1rem;
   position: relative;
   overflow: hidden;
   cursor: grab;
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 1s ease;
+  animation: subtleMovement 1s alternate infinite;
+}
+
+@keyframes subtleMovement {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(30px);
+  }
+}
+.item:hover {
+  animation: none;
+
+  transform: scale(1.1);
 }
 
 .item img {
@@ -69,13 +84,12 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.95); 
-  z-index: 999; 
+  background-color: rgba(0, 0, 0, 0.95);
+  z-index: 999;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
 
 .view-button {
   color: white;
@@ -89,50 +103,42 @@
   transition: background-color 0.2s ease-in-out;
 }
 
-
 .item:hover .overlay {
   opacity: 1;
 }
 .item:hover {
-  transform: scale(1.2);
-  filter: brightness(
-    0.8
-  ); 
+  filter: brightness(0.8);
 }
-
 
 .item:hover .overlay .view-button {
   background-color: #ff0000;
 }
 
-
-
 @media screen and (max-width: 720px) {
   .slider-container {
-    overflow-x: hidden !important; 
+    overflow-x: hidden !important;
     margin-top: 5rem;
     height: 30rem;
     margin-bottom: 5rem;
-    box-shadow: 0px 0px 100px yellow; 
-    border-radius: 5%;
   }
 
   .slider {
-    width: 100 !important ; 
+    width: 100 !important ;
   }
 
   .item {
-    width: 390px !important; 
+    width: 390px !important;
     height: 300px !important;
     margin-right: 2rem !important;
+    border: 1px solid black;
   }
   .item:hover {
     transform: scale(1);
   }
 
   .item img {
-    height: 100% !important; 
-    max-width: 100% !important; 
+    height: 100% !important;
+    max-width: 100% !important;
   }
   .view-button {
     top: 0;

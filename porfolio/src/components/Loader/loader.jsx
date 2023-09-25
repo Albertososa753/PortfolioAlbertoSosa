@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import LogoCargando from "../../assets/logo.png"; // Asegúrate de importar tu logo
-import "./loader.css"; // Importa tu archivo de estilos CSS para el Loader
+import LogoCargando from "../../assets/Logos/logo.png";
+import "./loader.css";
 
 const Loader = () => {
   const [loadingText, setLoadingText] = useState("");
@@ -17,14 +17,13 @@ const Loader = () => {
         clearInterval(intervalId);
         setRepeatCount(repeatCount + 1);
         if (repeatCount < 1) {
-          // Repite la animación dos veces
           setTimeout(() => {
             setLoadingText("");
             currentIndex = 0;
-          }, 100); // Pausa entre repeticiones (ajusta según sea necesario)
+          }, 100);
         }
       }
-    }, 300); // Ajusta la velocidad aquí
+    }, 300);
   }, [repeatCount]);
   return (
     <div className="loader-container">

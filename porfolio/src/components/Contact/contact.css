@@ -1,5 +1,4 @@
-#contact{
-
+#contact {
   min-height: calc(100vh - 40rem);
   width: 100vw;
   max-width: 60rem;
@@ -10,108 +9,98 @@
   align-items: center;
   justify-content: center;
   margin-top: 10%;
-
-
 }
-@media screen and (min-width:1200px) {
-  #contact{
+@media screen and (min-width: 1200px) {
+  #contact {
     margin-bottom: 5%;
-  transform: scale(1.25); /* Aumenta todos los elementos al 125% */
+    transform: scale(1.25);
   }
 }
 
-.contactDesc{
-    padding: 1rem;
-    font-size: medium;
-    font-weight: 300;
+.contactDesc {
+  padding: 1rem;
+  font-size: medium;
+  font-weight: 300;
 }
 
-.contactFrom{
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 90vw;
-    max-width: 60rem;
+.contactFrom {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  max-width: 60rem;
 }
 
-.name, .email, .msg {
-    font-size: medium;
-    width: 100%;
-    max-width: 40rem;
-    margin: 0.5rem;
-    padding: 0.5rem 1rem;
-    color: white;
-    border: none;
-    border-radius: 0.5rem;
-    background: rgb(40, 40, 40);
+.name,
+.email,
+.msg {
+  font-size: medium;
+  width: 100%;
+  max-width: 40rem;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  background: rgb(40, 40, 40);
 }
 
-.submitBtn{
-    background: white;
-    border: none;
-    border-radius: 0.5rem;
-    margin: 2rem;
-    padding: 0.75rem 3.5rem;
-    transition: background-color 0.3s ease;
-
+.submitBtn {
+  background: white;
+  border: none;
+  border-radius: 0.5rem;
+  margin: 2rem;
+  padding: 0.75rem 3.5rem;
+  transition: background-color 0.3s ease;
 }
 .submitBtn:hover {
-    background-color: yellow;
-    cursor: pointer;
-  }
-
-.links{
-    display: flex;
-    flex-wrap: wrap;
-
+  background-color: yellow;
+  cursor: pointer;
 }
 
-
-.link{
-    object-fit: cover;
-    height: 2rem;
-    width: 2rem;
-    margin: 0 0.75rem;
+.links {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-
+.link {
+  object-fit: cover;
+  height: 2.5rem;
+  width: 2.5rem;
+  margin: 0 0.75rem;
+}
 
 .icon-svg {
-    fill: rgb(40, 40, 40); /* Color predeterminado (gris) */
-    transition: fill 0.2s; /* Transición suave para el cambio de color */
-  }
-  
-  /* Estilo cuando el icono está en hover */
-  .icon-svg:hover {
-    fill: yellow; /* Cambia el color a amarillo al hacer hover */
-  }
+  fill: rgb(40, 40, 40);
+  transition: fill 0.2s;
+}
 
+.icon-svg:hover {
+  fill: yellow;
+}
 
-  /* Estilo para el botón de flecha */
 .arrow-button {
   position: fixed;
-  bottom: 20px; /* Ajusta la posición vertical según tu preferencia */
-  left: 70rem; /* Ajusta la posición horizontal según tu preferencia */
-  background-color: #007bff; /* Color de fondo del botón */
-  color: white; /* Color del icono */
-  width: 40px; /* Ancho del botón */
-  height: 40px; /* Altura del botón */
-  border-radius: 50%; /* Forma circular */
+  bottom: 20px;
+  left: 70rem;
+  background-color: #007bff;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilo para el icono de flecha (FontAwesome) */
 .arrow-button i {
-  font-size: 20px; /* Tamaño del icono */
+  font-size: 20px;
 }
 
-/* Cambia el color del botón al pasar el mouse por encima */
 .arrow-button:hover {
-  background-color: #0056b3;
+  background-color: transparent;
 }

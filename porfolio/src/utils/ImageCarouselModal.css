@@ -1,57 +1,90 @@
 /* ModalCarousel.css */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
-
 .modal-carousel {
   position: fixed;
   z-index: 10000;
-  background-color: white;
-  width: 80% !important;
-  height: 50rem;
+  background-color: rgb(30, 30, 30);
+  width: 69%;
+  height: 70%;
   margin: 0 auto;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  border-radius: 21px;
   overflow: hidden;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-
-.close-button {
+.close-button-modal {
   position: absolute;
   top: 15px;
-  right: 15px;
+  right: 5px;
   height: 40px;
   width: 90px;
   background-color: transparent;
   border: none;
-  font-size: 18px;
-  background: red;
-  color: white;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
   cursor: pointer;
-  border-radius: 5px 5px 5px 5px;
+}
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 5px;
+  height: 40px;
+  width: 90px;
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
 }
 
 .close-button:hover {
   transform: scale(1.1);
 }
-
-.text {
-  color: rgb(0, 0, 0);
-  text-align: justify;
-  word-wrap: break-word;
+.close-button-modal:hover {
+  transform: scale(1.1);
 }
 
+.text {
+  color: white;
+  text-align: center;
+}
+
+.image-container {
+  text-align: center;
+}
 .image-preview {
   cursor: pointer;
+  width: 50%;
+  transition: opacity 5s;
+}
+
+.image-preview:hover {
+  cursor: pointer;
+  filter: brightness(30%);
+}
+
+.github-link {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 20px;
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.github-link:hover {
+  text-decoration: underline;
 }
 
 .carousel-container {
   position: fixed;
   z-index: 10000;
   background: black;
-  max-width: 100%;
+  max-width: 90%;
   max-height: 100%;
   margin: 0 auto;
   padding: 2px;
@@ -68,8 +101,8 @@
 }
 
 .carousel .control-arrow {
-  font-size: 32px; 
-  padding: 10px; 
+  font-size: 32px;
+  padding: 10px;
   border-radius: 15px;
 }
 
@@ -77,12 +110,10 @@
   cursor: pointer;
 }
 
-/* Para pantallas pequeñas*/
-
 @media (max-width: 768px) {
   .modal-carousel {
     width: 99%;
-    height: 80%;
+    height: 95%;
   }
   .carousel .slide img {
     width: 100% !important;
@@ -94,11 +125,97 @@
     right: 5px;
     height: 25px;
     width: 25px;
+    color: white;
   }
-
+  .close-button-modal {
+    z-index: 10000;
+    top: 5px;
+    right: 5px;
+    height: 25px;
+    width: 25px;
+    color: black;
+  }
+  .text {
+    font-size: 13px;
+    text-align: justify;
+    margin-bottom: 1px;
+  }
+  .text-title {
+    text-align: center;
+    font-size: 23px;
+    text-shadow: 22px 20px 40px rgba(0, 0, 0, 1);
+    color: bisque;
+    margin-bottom: -1px;
+  }
+  .text-short {
+    text-align: center;
+  }
   .image-preview {
     height: 30vh !important ;
     width: 100% !important;
     padding: 0;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 769px) {
+  .modal-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .carousel-container {
+    position: absolute;
+    text-shadow: 22px 20px 40px rgb(245, 0, 0);
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .modal-header h1 {
+    order: 1;
+  }
+
+  .modal-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 5%;
+  }
+
+  .image-container {
+    flex: 1;
+    margin-right: 50px;
+  }
+
+  .image-preview {
+    width: 50rem !important;
+    height: 100% !important;
+    border-radius: 21px;
+    margin-top: 20px;
+  }
+
+  .text-title {
+    flex: 1;
+    margin: 0;
+    text-align: center;
+    font-size: 26px;
+    text-shadow: 22px 20px 40px rgba(0, 0, 0, 1);
+    color: bisque;
+  }
+  .text-short {
+    text-align: center;
+  }
+
+  .text {
+    margin-bottom: 5px;
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  .close-button-modal {
+    order: 3;
+  }
+
+  .github-link {
+    order: 4;
   }
 }

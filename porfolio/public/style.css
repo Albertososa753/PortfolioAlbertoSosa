@@ -10,7 +10,6 @@
 
 }
 body{
-    /*Despues lo cambiamos*/
     background: rgb(30, 30, 30);
     color: white;
     overflow: hidden;
@@ -18,22 +17,21 @@ body{
 
 }
 
-/* Estilos para el scrollbar */
 ::-webkit-scrollbar {
-    width: 15px; /* Ancho del scrollbar */
+    width: 15px; 
     height: 10px;
   }
   
   ::-webkit-scrollbar-track {
-    background: rgba(255, 255, 255, 0.1); /* Color de fondo del track (fondo detrás del scrollbar) */
+    background: rgba(255, 255, 255, 0.1); 
   }
   
   ::-webkit-scrollbar-thumb {
-    background: rgb(191, 191, 76); /* Color del scrollbar */
-    border-radius: 1px; /* Radio de borde del scrollbar */
+    background: rgb(191, 191, 76); 
+    border-radius: 1px;
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background: rgba(255, 255, 255, 0.5); /* Cambia el color del scrollbar en hover */
+    background: rgba(255, 255, 255, 0.5); 
   }
   

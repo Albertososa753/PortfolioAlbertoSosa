@@ -20,11 +20,10 @@ import git from "../../assets/svg/agiles/git.svg";
 import github from "../../assets/svg/agiles/github.svg";
 import scrum from "../../assets/svg/agiles/scrum.svg";
 import trello from "../../assets/svg/agiles/trello.svg";
-import UIDesing from "../../assets/ui-design.png";
-import Back from "../../assets/back.png";
+import UIDesing from "../../assets/Logos/ui-design.png";
+import Back from "../../assets/Logos/back.png";
 import entitiy from '../../assets/svg/back/entity_image.svg'
-/*
- */
+
 
 const Skills = () => {
   return (

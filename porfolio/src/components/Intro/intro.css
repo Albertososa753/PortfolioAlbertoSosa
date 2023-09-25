@@ -1,26 +1,19 @@
-#intro{
+#intro {
   height: calc(100vh - 4rem);
   width: 80%;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
-  box-shadow: 10px 10px 1000rem yellow; /* Añade el sombreado alrededor de la imagen */
+  box-shadow: 10px 10px 1000rem yellow;
   border-radius: 0 0 15px 15px;
-  text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.5); /* Ajusta los valores según tu preferencia */
-
-
+  text-shadow: 1px 0px 0px rgba(0, 0, 0, 0.5);
 }
 
-@media screen and (max-width:720px) {
-#intro{
-width: 100%;  }
+@media screen and (max-width: 720px) {
+  #intro {
+    width: 100%;
+  }
 }
-
-
-
-
-
-
 
 .jump-text {
   animation: jump 1s infinite alternate;
@@ -31,7 +24,7 @@ width: 100%;  }
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-10px); /* Ajusta la distancia de salto según tu preferencia */
+    transform: translateY(-10px);
   }
 }
 .bg {
@@ -41,12 +34,10 @@ width: 100%;  }
   z-index: -1;
   object-fit: cover;
   height: 100%;
-  border-radius: 2px 2px 2px rgba(9, 197, 44, 0.5); /* Ajusta los valores según tu preferencia */
- 
+  border-radius: 2px 2px 2px rgba(9, 197, 44, 0.5);
 }
 
-
-.introContent{
+.introContent {
   height: 100vh;
   width: 100vw;
   padding: 2rem;
@@ -57,15 +48,12 @@ width: 100%;  }
   justify-content: center;
 }
 
-
-
-
-.hello{
+.hello {
   font-size: 1.75rem;
   font-weight: 100;
 }
 
-.introName{
+.introName {
   color: yellow;
 }
 
@@ -73,11 +61,10 @@ width: 100%;  }
   font-size: medium;
   font-weight: 300;
   letter-spacing: 1px;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Ajusta los valores según tu preferencia */
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-
-.btn{
+.btn {
   background: white;
   margin: 1rem 0;
   padding: 0.75rem 1.5rem;
@@ -85,26 +72,23 @@ width: 100%;  }
   border-radius: 2rem;
 }
 
-
-
-
-@media screen and (max-width:480px) {
-  .bg{
-      right: -20vw;
+@media screen and (max-width: 480px) {
+  .bg {
+    right: -20vw;
   }
 }
 
-
-@media screen and (min-width:1200px) {
-  .introContent{
-    
-  font-size: 3.85rem; 
- }.hello{
-  font-size: 2.05rem;
- }.introPara {
-  font-size: 20px;
-  font-weight: 300;
-  letter-spacing: 1px;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Ajusta los valores según tu preferencia */
-}
+@media screen and (min-width: 1200px) {
+  .introContent {
+    font-size: 3.85rem;
   }
+  .hello {
+    font-size: 2.05rem;
+  }
+  .introPara {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+}
