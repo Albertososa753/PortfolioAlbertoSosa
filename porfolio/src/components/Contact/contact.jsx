@@ -77,12 +77,7 @@ const Contact = () => {
           <a id="cv" href="./AlbertoSosaCV.pdf" download>
             <img src={LogoCV} alt="CV" className="link" />
           </a>
-          <a
-            href="https://www.youtube.com/channel/UCaTcqNF0NmrzuLK5BJahEmQ"
-            target="_blank"
-          >
-            <img src={YT} alt="YouTube" className="link" />
-          </a>
+       
         </div>
       </form>
     </div>
