@@ -27,7 +27,6 @@ const Loader = () => {
   }, [repeatCount]);
   return (
     <div className="loader-container">
-      <img src={LogoCargando} alt="Logo de carga" className="rotating-logo" />
       <h1 className="loading-text">Cargando{loadingText}</h1>
     </div>
   );
