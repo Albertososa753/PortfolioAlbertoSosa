@@ -54,23 +54,12 @@ const Proyects = () => {
         "Desarrollé un desafío para una entrevista laboral, el cual consistió en la creación de una página web en la que un administrador podría crear, modificar o eliminar un viaje. También podría crear un pasajero y asignarlo a un viaje.",
       tecnologias:
         "Angular | ABP Framework | C# | .NET Entity Framework | Docker",
-      imagenes: [
-        abp1,
-        abp2,
-        abp3,
-        abp4,
-        abp5,
-        abp6,
-        abp7,
-        abp8,
-        abp9,
-        abp10
-      ],
+      imagenes: [abp1, abp2, abp3, abp4, abp5, abp6, abp7, abp8, abp9, abp10],
       enlaces: {
-        github: "https://github.com/Albertososa753/ProyectoABP.git"
-      }
+        github: "https://github.com/Albertososa753/ProyectoABP.git",
+      },
     },
-  
+
     {
       titulo: "CEIBO DIGITAL",
       duracion: "11/07/2023 - 04/08/2023",
@@ -90,24 +79,24 @@ const Proyects = () => {
         ceibo8,
         ceibo9,
         ceibo10,
-        ceibo11
+        ceibo11,
       ],
       enlaces: {
-        github: "https://github.com/Albertososa753/CEIBODIG.git"
-      }
+        github: "https://github.com/Albertososa753/CEIBODIG.git",
+      },
     },
     {
       titulo: "Ropita ECommerce",
       duracion: "27/06/2023 - 07/07/2023",
       rol: "Desarrollador en equipo de 4 personas",
       descripcion:
-        "Maquetación, creación y diseño de una tienda de ropa en línea con búsqueda por categoría o nombre de prenda, vista individual del producto y carrito de compras. Incluye lógica de usuario, incluyendo un usuario con privilegios de administrador.",
+        "Participé en la conceptualización, diseño y desarrollo de una tiendade ropa en línea. Implementé funciones de búsqueda avanzada y un sistema derolesdeusuario, incluidounrolde administrador.",
       tecnologias:
-        "Angular | ABP Framework | C# | .NET Entity Framework | Docker",
+        "React | React-Redux | React-Hooks | Node.js | Express | Sequelize",
       imagenes: [ecommerce1, ecommerce2, ecommerce3, ecommerce4, ecommerce5],
       enlaces: {
-        github: "https://github.com/Albertososa753/Ropita-ECommerce.git"
-      }
+        github: "https://github.com/Albertososa753/Ropita-ECommerce.git",
+      },
     },
     {
       titulo: "TMDB",
@@ -119,8 +108,8 @@ const Proyects = () => {
         "React | React-Redux | React-Hooks | NextUI | Node.js | Express | Sequelize",
       imagenes: [tmdb1, tmdb2, tmdb3, tmdb4, tmdb5],
       enlaces: {
-        github: "https://github.com/Albertososa753/TMDB.git"
-      }
+        github: "https://github.com/Albertososa753/TMDB.git",
+      },
     },
     {
       titulo: "Portfolio",
@@ -131,11 +120,10 @@ const Proyects = () => {
       tecnologias: "JavaScript | CSS | React | Framer-Motion ",
       imagenes: [portfolio],
       enlaces: {
-        github: "https://github.com/Albertososa753/PortfolioAlbertoSosa.git"
-      }
-    }
+        github: "https://github.com/Albertososa753/PortfolioAlbertoSosa.git",
+      },
+    },
   ];
-  
 
   const handleImageClick = (imageIndex) => {
     setSelectedImage(imageIndex);
