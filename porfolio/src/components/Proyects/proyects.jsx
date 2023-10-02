@@ -90,7 +90,7 @@ const Proyects = () => {
       duracion: "27/06/2023 - 07/07/2023",
       rol: "Desarrollador en equipo de 4 personas",
       descripcion:
-        "Participé en la conceptualización, diseño y desarrollo de una tiendade ropa en línea. Implementé funciones de búsqueda avanzada y un sistema derolesdeusuario, incluidounrolde administrador.",
+        "Participé en la conceptualización, diseño y desarrollo de una tienda de ropa en línea. Implementé funciones de búsqueda avanzada y un sistema de roles de usuario, incluido un rol de administrador.",
       tecnologias:
         "React | React-Redux | React-Hooks | Node.js | Express | Sequelize",
       imagenes: [ecommerce1, ecommerce2, ecommerce3, ecommerce4, ecommerce5],
